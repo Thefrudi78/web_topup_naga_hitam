@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Web Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slider-wrapper">
+              <div class="slide">
+                <img src="images/slider_1.jpg" alt="Top Up Murah dan Terpercaya"></a>
+              </div>
+              <div class="slide">
+                <img src="images/pubg_slider.jpg" alt="Game PUBG Diskon 20%"data-name="PUBG" onclick="goToTopUp('PUBG')"></a>
+              </div>
+              <div class="slide">
+                <img src="images/ml_slider.jpg" alt="Game Mobile Legend Diskon 30%"data-name="Mobile Legends" onclick="goToTopUp('Mobile Legends')"></a>
+              </div>
+            </div>
+            <button class="prev">❮❮</button>
+            <button class="next">❯❯</button>
+          </div>
+        <header>
+            <img src="images/naga hitam crop.png" alt="logo">
+            <form class="search-form">
+                <input type="text" id="searchInput" placeholder="Cari game...">
+                <button type="button" id="searchButton">Search</button>
+            </form>
+        </header>
+        <div class="store-item">
+            <section class="popular-section">
+                <h2>🔥 Populer</h2>
+                <div class="popular-games">
+                    <article class="game-card" data-name="Mobile Legends" onclick="goToTopUp('Mobile Legends')">
+                        <img src="images/ml.webp" alt="Mobile Legends">
+                        <p>Mobile Legends</p>
+                    </article>
+                    <article class="game-card" data-name="Free Fire" onclick="goToTopUp('Free Fire')">
+                        <img src="images/ff.jpg" alt="Free Fire">
+                        <p>Free Fire</p>
+                    </article>
+                    <article class="game-card" data-name="Genshin Impact" onclick="goToTopUp('Genshin Impact')">
+                        <img src="images/gensin.jpg" alt="Genshin Impact">
+                        <p>Genshin Impact</p>
+                    </article>
+                    <article class="game-card" data-name="PUBG" onclick="goToTopUp('PUBG')">
+                        <img src="images/pubg.jpg" alt="PUBG">
+                        <p>PUBG</p>
+                    </article>
+                    <article class="game-card" data-name="League of Legends: Wild Rift" onclick="goToTopUp('League of Legends: Wild Rift')">
+                        <img src="images/lol.webp" alt="League of Legends: Wild Rift">
+                        <p>League of Legends: Wild Rift</p>
+                    </article>
+                    <article class="game-card" data-name="Arena Of Valor" onclick="goToTopUp('Arena Of Valor')">
+                        <img src="images/aov.webp" alt="Arena Of Valor">
+                        <p>Arena Of Valor</p>
+                    </article>
+                    <article class="game-card" data-name="FC Mobile" onclick="goToTopUp('FC Mobile')">
+                        <img src="images/fc.png" alt="FC Mobile">
+                        <p>FC Mobile</p>
+                    </article>
+                    <article class="game-card" data-name="Call Of Duty Mobile" onclick="goToTopUp('Call Of Duty Mobile')">
+                        <img src="images/cod.jpg" alt="Call Of Duty Mobile">
+                        <p>Call Of Duty Mobile</p>
+                    </article>
+                    <article class="game-card" data-name="Zenless Zone Zero" onclick="goToTopUp('Zenless Zone Zero')">
+                        <img src="images/zero.png" alt="Zenless Zone Zero">
+                        <p>Zenless Zone Zero</p>
+                    </article>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    <div class="footer">
+    <div class="footer-content">
+        <div class="flag">
+            <h3>Black Dragon Market</h3>
+                <img src="images/naga hitam crop.png" alt="">
+                <p>Website topup-murah, cepat dan terpercaya</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>SOCIAL MEDIA</h3>
+            <ul>
+                <li><img src="images/fb.png" alt=""> Naga Hitam Store Id</li>
+                <li><img src="images/ig.png" alt=""> Nagahitam_id</li>
+                <li><img src="images/x.png" alt=""> NagahitamId</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>HUBUNGI KAMI</h3>
+            <ul>
+                <li><img src="images/tlpn.png" alt=""> Pemesanan : 0897-1133-6567</li>
+                <li><img src="images/wa.png" alt="">No Telp : 0857-1020-9249</li>
+                <li><img src="images/email.png" alt=""> Email : Prostopup.id@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Layanan Top Up Games No 1 Di Indonesia | Black Dragon Market
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

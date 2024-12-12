@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-topup">
+       <a href="index.html" class="tombol-home">
+        <img src="images/Home_icon.png" alt="">
+       </a>
+        <header>
+            <h1>Top-Up Game</h1>
+            <p id="selectedGame" style="font-weight: bold; color: #004d66;"></p>
+        </header>
+        <section class="topup-section">
+            <h2>1️⃣ Masukkan Player ID</h2>
+            <form class="player-id-form">
+                <input type="text" id="playerIdInput" placeholder="Masukkan Player ID">
+            </form>
+            <div class="store-item">
+                <h2>2️⃣ Pilih Nominal Top-Up</h2>
+                <div class="topup-options" id="topupOptions"></div>
+            </div>
+            <div class="metode-p">
+                <h2>3️⃣ Pilih Metode Pembayaran</h2>
+                <div class="payment-methods" id="paymentMethods"></div>
+            </div>
+            <div class="btn-lanjutkan">
+                <input onclick="showPopup()">Lanjutkan Pembayaran</>
+            </div>
+        </section>
+        <!--Ini kalo mau ubah isi popup nya bangke emg pala gw pusing gara gara js -rudi -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content">
+                <h2>Konfirmasi Pembayaran</h2>
+                <p>Apakah Anda yakin ingin melanjutkan pembayaran ini?</p>
+                <div class="popup-buttons">
+                    <button id="confirmButton">Konfirmasi</button>
+                    <button class="batal" onclick="closePopup()">Batal</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
